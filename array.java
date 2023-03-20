@@ -1,28 +1,22 @@
-import java.util.*;
-
 public class array {
-    public static void main(String[] args) {
-        // int[] marks= new int[3];
-        // int marks[]= new int[3];
-        // marks[0]=97;
-        // marks[1]=98;
-        // marks[2]=95;
-        Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int[] number = new int[size];
-        // Input
-        for (int i = 0; i < size; i++) {
+    public static void main(String[] args){
+        int i;
+       // int [] marks = new int[100];// memory Allocation
+       int []marks={77,776,55,44,33,23,412,345,};
+       /* int marks;
+        marks=new int [100];*/
 
-            number[i] = sc.nextInt();
-        }
+        for (i=0;i<=99;i++){
+            marks[i]=i+1;
 
-        // Output
-
-        // System.out.println(marks[0]);
-        // System.out.println(marks[1]);
-        // System.out.println(marks[2]);
-
-        for (int i = 0; i < size; i++)
-            System.out.println(number[i]);
     }
-}
+        for (i=0;i<=marks.length;i++){
+            System.out.println(marks[i]);
+        }
+        System.out.println("Array Length is "+marks.length);
+    }
+
+   /* for (int element:marks){
+        System.out.println(element);*/
+    }
+ 
